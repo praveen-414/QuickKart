@@ -13,6 +13,8 @@ import CheckOutPage from "./pages/CheckOutPage";
 import ContactUs from "./pages/ContactUs";
 import { Toaster } from "react-hot-toast";
 import Address from "./pages/Address";
+import Payment from "./pages/Payment";
+import Orders from "./pages/Orders";
 
 const router = createBrowserRouter([
   {
@@ -56,12 +58,21 @@ const router = createBrowserRouter([
         path: "address",
         element: <Address />,
       },
+      {
+        path: "/orders",
+        element: <Orders />,
+      },
     ],
   },
   {
     path: "/account",
     element: <Account />,
   },
+  {
+    path: "/payment",
+    element: <Payment />,
+  },
+
   {
     path: "orderSuccess",
     element: <SuccessPage />,
